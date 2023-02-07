@@ -1,10 +1,18 @@
-import streamlit as st
-import pickle
+# -*- coding: utf-8 -*-
+"""
+Spyder Editor
 
-st.title('Book Recommendation(Group-5)')
-df = pickle.load(open(r"C:/Users/Varsha/Documents/DS/Project_2/Book_Recomendation_System/notebook/df.pkl", "rb"))
-model = pickle.load(open(r"C:/Users/Varsha/Documents/DS/Project_2/Book_Recomendation_System/notebook/model.pkl", "rb"))
-data = pickle.load(open(r"C:/Users/Varsha/Documents/DS/Project_2/Book_Recomendation_System/notebook/data.pkl", "rb"))
+This is a temporary script file.
+"""
+
+import streamlit as st
+import pickle as pkl
+
+st.title('Book Recommendation( Group 5) ')
+df = pkl.load(open(r"C:\Users\Varsha\Documents\DS\Project_2\Book_Recomendation_System\notebook\df.pkl", "rb"))
+model = pkl.load(open(r"C:\Users\Varsha\Documents\DS\Project_2\Book_Recomendation_System\notebook\model.pkl", "rb"))
+data = pkl.load(open(r"C:\Users\Varsha\Documents\DS\Project_2\Book_Recomendation_System\notebook\data.pkl", "rb"))
+
 
 def recommend(books):
     recommended_book_names = []
@@ -42,10 +50,12 @@ if st.button('Show Recommend book'):
 
     #with col5:
         st.markdown(recommended_book[4])
-        #st.markdown(recommended_book[5])
  # Use the full page instead of a narrow central column
     #st.set_page_config(layout="wide")
 
     # Space out the maps so the first one is 2x the size of the other three
     #col1, col2, col3, col4,col5 = st.columns((2, 1, 1, 1,1))
-
+    
+    
+    
+    
