@@ -2,9 +2,9 @@ import streamlit as st
 import pickle as pkl
 
 st.title('Book Recommendation( Group 5) ')
-df = pkl.load(open(r"C:\Users\Varsha\Documents\DS\Project_2\Book_Recomendation_System\notebook\df.pkl", "rb"))
-model = pkl.load(open(r"C:\Users\Varsha\Documents\DS\Project_2\Book_Recomendation_System\notebook\model.pkl", "rb"))
-data = pkl.load(open(r"C:\Users\Varsha\Documents\DS\Project_2\Book_Recomendation_System\notebook\data.pkl", "rb"))
+df = pkl.load(open(r"C:\\Users\\Varsha\\Documents\\DS\\Project_2\\Book_Recomendation_System\\notebook\\df.pkl", "rb"))
+model = pkl.load(open(r"C:\\Users\\Varsha\\Documents\\DS\\Project_2\\Book_Recomendation_System\\notebook\\model.pkl", "rb"))
+data = pkl.load(open(r"C:\\Users\\Varsha\\Documents\\DS\\Project_2\\Book_Recomendation_System\\notebook\\data.pkl", "rb"))
 
 
 def recommend(books):
