@@ -18,7 +18,7 @@ def recommend(books):
 
 
 users = data['User-ID'].values
-Users_book = st.selectbox('Select a books from drop down', users)
+Users_book = st.selectbox('Select a User-ID from drop down', users)
 selected_user_id = data[data["User-ID"] == Users_book].sort_values('Book-Rating', ascending=False).head(1)
 selected_book = selected_user_id['Book-Title'].values
 
